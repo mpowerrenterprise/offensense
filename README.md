@@ -169,12 +169,12 @@ This innovative solution enhances the efficiency of moderating live interactions
 | admin    | admin    |
 
 
-#### 4.1.2 Dashboard
+#### 4.1.2 Dashboard Screen
   
   ![Dashboard Screen](docs/media/3-dashboard.png)
 
 
-#### 4.1.3 Dashboard
+#### 4.1.3 Dataset Screen
   
   ![Dataset Screen](docs/media/4-dataset.png)
 
