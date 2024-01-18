@@ -6,7 +6,6 @@
     ├── docs                                   # Contains documents.
     ├── research                               # Contains pre-research experiments.
     ├── source                                 # Contains project source code.
-    │   ├── 0-database                             # Contains database.
     │   ├── 1-offensense-management-app            # Contains management app's source code.
     │   ├── 2-offensense-monitoring-app            # Contains monitoring app's source code.
     └── README.MD                              # Readme Content.
