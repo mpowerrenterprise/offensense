@@ -33,41 +33,32 @@
 
             <div class="row">
 
-
                 <div style="margin-top: 30px;" id="DataTable" class="col-md-12">
     
                     <table class="table table-bordered table-hover" style="background-color:#f5f2ed;">
                         <thead>
                             <tr>
-                                <th>NO</th>
-                                <th>Place</th>
+                                <th>No</th>
                                 <th>Date</th>
                                 <th>Time</th>
-                                <th>Used Word</th>
-                                <th>Spken Text</th>
+                                <th>Prediction</th>
+                                <th>Transcript</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($Data as $key=> $Data)
                                 <tr>
                                     <th>{{++$key}}</th>
-                                    <td>{{$Data->room}}</td>
                                     <td>{{$Data->date}}</td>
                                     <td>{{$Data->time}}</td>
-                                    <td>{{$Data->bad_word}}</td>
-                                    <td>{{$Data->spoken_text}}</td>
+                                    <td>{{$Data->prediction}}</td>
+                                    <td>{{$Data->transcript}}</td>
                                 </tr>
                             @endforeach
-                
                         </tbody>
                     </table>
-            
                 </div>   
-
-                
             <div>
-
-
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
