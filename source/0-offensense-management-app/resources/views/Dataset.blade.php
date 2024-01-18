@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>Bad Word Predictor</title>
+        <title>Offensence</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
 
@@ -16,10 +16,13 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Predicted Data<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/dashboard">Predictions<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/dataset">Words Dataset</a>
+                        <a class="nav-link" href="/dataset">Dataset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -32,7 +35,7 @@
 
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="jumbotron">
-                        <h1 class="display-4" style="text-align: center;">Add new words</h1>
+                        <h1 class="display-4" style="text-align: center;">Add New Words</h1>
                         <hr class="my-4">
 
                         <form>
@@ -62,7 +65,7 @@
                                     <tr>
                                         <th>{{++$key}}</th>
                                         <td>{{$Data->word}}</td>
-                                        <td><a onclick="return confirm('Do you want to delete this?. Are you sure?')" href="delete_word/{{$Data->auto_id}}"  class="btn btn-danger col-md-8">Delete</a></td>
+                                        <td><a onclick="return confirm('Do you want to delete this?. Are you sure?')" href="delete_word/{{$Data->autoid}}"  class="btn btn-danger col-md-8">Delete</a></td>
                                     </tr>
                                 @endforeach
                     

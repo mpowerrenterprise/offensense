@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>Bad Word Predictor</title>
+        <title>Offensence</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
 
@@ -16,10 +16,13 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Predicted Data<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/dashboard">Predictions<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/dataset">Words Dataset</a>
+                        <a class="nav-link" href="/dataset">Dataset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

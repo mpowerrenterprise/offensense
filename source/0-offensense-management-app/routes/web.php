@@ -13,11 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',"Main_Controller@Index_Function");
+Route::get('/',"MainController@viewAuthentication");
 
-Route::get('/dataset',"Main_Controller@Word_Dataset");
+Route::post('/login',"MainController@loginProcess")->name('login');
 
-Route::get('/delete_word/{auto_id}',"Main_Controller@DeleteWord");
+Route::get('/logout',"MainController@logoutProcess")->name('logout');
 
-Route::get('/add_word/{word}',"Main_Controller@AddWord");
+Route::get('/dashboard',"MainController@viewDashbard");
+
+Route::get('/dataset',"MainController@viewDataset");
+
+Route::get('/delete_word/{autoid}',"MainController@deleteWord");
+
+Route::get('/add_word/{word}',"MainController@addWord");
 

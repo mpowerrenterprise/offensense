@@ -13,7 +13,7 @@ class CreatePredictionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('prediction', function (Blueprint $table) {
+        Schema::create('predictions', function (Blueprint $table) {
             $table->id('autoid');
             $table->string('date', 50);
             $table->string('time', 50);
