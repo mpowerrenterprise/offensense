@@ -1,5 +1,9 @@
 import pyttsx3
 import speech_recognition as sr
+from gtts import gTTS
+import os
+import soundfile as sf
+import time
 import subprocess
 import mysql.connector
 from datetime import datetime
