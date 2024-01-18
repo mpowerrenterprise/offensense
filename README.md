@@ -26,9 +26,10 @@ This innovative solution enhances the efficiency of moderating live interactions
 
 ### 2.1 Management App (Web App)
 
- - Laravel (v8.10.0)
- - PHP (7.3)
+ - Laravel (v8.83.27)
+ - PHP (v8.2.0)
  - MySQL
+ - Composer
 
 ### 2.2 Monitoring App (Desktop App)
 
@@ -42,18 +43,157 @@ This innovative solution enhances the efficiency of moderating live interactions
 
 ### 3.1 Setup Management App
 
-- Database setup
-- Deploy setup  
+- **Step 01:** Create a MySQL database
 
-### 3.2 Setup Monitoring App
+  ```
+  Database Name: db_offensence
+  ```
+  
+  ![Create DB](docs/media/1-create-db.png)
 
-- Requirement installation
+- **Step 02:** Install Composer
+
+  ```
+    Download Link: getcomposer.org
+  ```
+
+- **Step 03:** Navigate to the following directory
+
+  ```
+    offensense\source\0-offensense-management-app
+  ```
+
+- **Step 04:** Install Laravel using Composer: Run the following command.
+
+  ```
+    composer install
+  ```
+
+
+- **Step 05:** Migrate the database: Run the following command.
+
+  ```
+    php artisan migrate
+  ```
+
+- **Step 06:** Launch the app: Run the following command.
+
+  ```
+    php artisan serve
+  ```
+
+### 3.2 Update PHP Version (Optional)
+
+**Note:** The PHP version needs to be matched with Laravel; the recommended PHP version is 8.2.0; if you are using newer or old PHP, it is essential to update Laravel accordingly. 
+
+- **Step 01:** Edit the composer.json: 
+
+  ```
+    "require": {
+        "php": "^8.2.0",
+        // other dependencies...
+    },
+  ```
+
+- **Step 02:** Update the Laravel with new PHP verion:  
+
+  ```
+    composer update
+  ```
+  **Note:** This command will download the Laravel that matches the given PHP version.
+
+- **Step 03:** Generate the Composer autoload files.
+
+  ```
+    composer dump-autoload
+  ```
+
+- **Step 04:** Clear the configuration cache.
+
+  ```
+    php artisan config:clear
+  ```
+
+- **Step 05:** Launch the app
+
+  ```
+    php artisan serve
+  ```
+
+### 3.3 Configure Database (Optional)
+
+- **Step 05:** Edit the .env file
+
+  ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE='db_offensence'
+    DB_USERNAME=root
+    DB_PASSWORD=
+  ```
+
+### 3.4 Setup Monitoring App
+
+- **Step 01:** Install Python (v3.8.5 Recommended)
+
+  ```
+    Download Link: python.org
+  ```
+
+- **Step 02:** Navigate to the following directory.
+
+  ```
+    offensense/docs/requirements.txt
+  ```
+
+- **Step 03:** Install dependencies | Run the following command
+
+  ```
+    pip install -r requirements.txt
+  ```
+
+ **Note:** This will install all the required dependencies.
 
 ## 04 Usage
 
 ### 4.1 Management App
 
+#### 4.1.1 Login Screen
+
+  ![Login Screen](docs/media/2-login-page.png)
+
+
+| Username | Password |
+|----------|----------|
+| admin    | admin    |
+
+
+#### 4.1.2 Dashboard
+  
+  ![Dashboard Screen](docs/media/3-dashboard.png)
+
+
+#### 4.1.3 Dashboard
+  
+  ![Dataset Screen](docs/media/4-dataset.png)
+
 ### 4.2 Monitoring App
+
+- **Step 01:** Navigate to the following directory.
+
+  ```
+    offensense\source\1-offensense-monitoring-app
+  ```
+
+
+- **Step 02:** Run the app.
+
+  ```
+    python main.py
+  ```
+
+  ![Monitoring Screen](docs/media/5-monitoring-app.png)
 
 
 ## Social Links
