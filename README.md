@@ -1,4 +1,4 @@
-# OFFENSENCE
+# OffenSence
 
 ## Repo Structure
 
@@ -196,7 +196,7 @@ This innovative solution enhances the efficiency of moderating live interactions
   ![Monitoring Screen](docs/media/5-monitoring-app.png)
 
 
-# CONTACT
+# Contact
 
 ### Website: 
 
